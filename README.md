@@ -1,6 +1,14 @@
 # Homebrew Tap for Plumber
 
-This is the official Homebrew tap for [Plumber](https://getplumber.io), a CI/CD compliance scanner for GitLab pipelines.
+<p align="center">
+  <img src="assets/plumber.svg" alt="Plumber" width="600">
+</p>
+
+<p align="center">
+  <b>CI/CD compliance scanner for GitLab pipelines</b>
+</p>
+
+This is the official Homebrew tap for [Plumber](https://github.com/getplumber/plumber), a CI/CD compliance scanner for GitLab pipelines.
 
 ## Installation
 
