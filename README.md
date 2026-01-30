@@ -28,18 +28,23 @@ brew install getplumber/plumber/plumber
 Need a specific version? Use the `@` syntax:
 
 ```bash
-# Install a specific version
-brew install getplumber/plumber/plumber@0.1.23
-
-# Link it to make it available as 'plumber'
-brew link plumber@0.1.23
+brew install getplumber/plumber/plumber@0.1.26
 ```
 
-Available versions:
-- `plumber` - latest (currently 0.1.23)
-- `plumber@0.1.23`
+Versioned formulas are **keg-only** (not added to PATH automatically). To use them:
 
-> **Note:** Versioned formulas are "keg-only", meaning they won't automatically link to `/usr/local/bin`. Use `brew link` to make them available, or run directly from the Cellar.
+```bash
+# Option 1: Use the full path for example:
+/usr/local/opt/plumber@0.1.26/bin/plumber --version
+
+# Option 2: Link it to make 'plumber' available globally
+brew link plumber@0.1.26
+```
+
+- `plumber` - latest (auto-links to PATH)
+- `plumber@X.Y.Z` - specific version (keg-only)
+
+See [all releases](https://github.com/getplumber/plumber/releases) for available versions.
 
 ## Upgrade
 
