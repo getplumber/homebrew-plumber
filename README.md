@@ -13,14 +13,14 @@ This is the official Homebrew tap for [Plumber](https://github.com/getplumber/pl
 ## Installation
 
 ```bash
-brew tap getplumber/tap
+brew tap getplumber/plumber
 brew install plumber
 ```
 
 Or install directly:
 
 ```bash
-brew install getplumber/tap/plumber
+brew install getplumber/plumber/plumber
 ```
 
 ## Installing a Specific Version
@@ -29,7 +29,7 @@ Need a specific version? Use the `@` syntax:
 
 ```bash
 # Install a specific version
-brew install getplumber/tap/plumber@0.1.23
+brew install getplumber/plumber/plumber@0.1.23
 
 # Link it to make it available as 'plumber'
 brew link plumber@0.1.23
@@ -51,7 +51,7 @@ brew upgrade plumber
 
 ```bash
 brew uninstall plumber
-brew untap getplumber/tap  # optional: remove the tap
+brew untap getplumber/plumber  # optional: remove the tap
 ```
 
 ## Documentation
