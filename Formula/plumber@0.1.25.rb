@@ -1,7 +1,7 @@
 # typed: false
 # frozen_string_literal: true
 
-class Plumber < Formula
+class PlumberAT0125 < Formula
   desc "CI/CD compliance scanner for GitLab pipelines"
   homepage "https://getplumber.io"
   version "0.1.25"
@@ -9,7 +9,7 @@ class Plumber < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/getplumber/plumber/releases/download/v#{version}/plumber-darwin-arm64"
+      url "https://github.com/getplumber/plumber/releases/download/v0.1.25/plumber-darwin-arm64"
       sha256 "fe08ea22a88647deb308558986534e6a079282c74994125b385952726eb9bdee"
 
       def install
@@ -18,7 +18,7 @@ class Plumber < Formula
     end
 
     on_intel do
-      url "https://github.com/getplumber/plumber/releases/download/v#{version}/plumber-darwin-amd64"
+      url "https://github.com/getplumber/plumber/releases/download/v0.1.25/plumber-darwin-amd64"
       sha256 "55eccffad34ebf2802333a014fdbd6c9ab3b7479a32790243fedd88d88de54e6"
 
       def install
@@ -29,7 +29,7 @@ class Plumber < Formula
 
   on_linux do
     on_arm do
-      url "https://github.com/getplumber/plumber/releases/download/v#{version}/plumber-linux-arm64"
+      url "https://github.com/getplumber/plumber/releases/download/v0.1.25/plumber-linux-arm64"
       sha256 "774fa66e898f496074319879f6df3a00cc23504031a6209f647114821f8fe23c"
 
       def install
@@ -38,7 +38,7 @@ class Plumber < Formula
     end
 
     on_intel do
-      url "https://github.com/getplumber/plumber/releases/download/v#{version}/plumber-linux-amd64"
+      url "https://github.com/getplumber/plumber/releases/download/v0.1.25/plumber-linux-amd64"
       sha256 "e25c6dc496be66dc6dcdce076d07075febdd94520026967295a5121fad197344"
 
       def install
@@ -47,7 +47,9 @@ class Plumber < Formula
     end
   end
 
+  keg_only :versioned_formula
+
   test do
-    assert_match "plumber version #{version}", shell_output("#{bin}/plumber --version")
+    assert_match "plumber version 0.1.25", shell_output("#{bin}/plumber --version")
   end
 end
