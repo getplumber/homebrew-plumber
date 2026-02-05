@@ -49,7 +49,7 @@ See [all releases](https://github.com/getplumber/plumber/releases) for available
 ## Upgrade
 
 ```bash
-brew upgrade plumber
+brew update && brew upgrade plumber
 ```
 
 ## Uninstall
