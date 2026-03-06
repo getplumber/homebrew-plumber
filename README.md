@@ -28,7 +28,7 @@ brew install getplumber/plumber/plumber
 Need a specific version? Use the `@` syntax:
 
 ```bash
-brew install getplumber/plumber/plumber@0.1.44
+brew install getplumber/plumber/plumber@0.1.60
 ```
 
 Versioned formulas are **keg-only** (not added to PATH automatically). To use them:
