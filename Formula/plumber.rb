@@ -4,13 +4,13 @@
 class Plumber < Formula
   desc "CI/CD security scanner for GitLab and GitHub pipelines"
   homepage "https://getplumber.io"
-  version "0.7.2"
+  version "0.7.3"
   license "MPL-2.0"
 
   on_macos do
     on_arm do
       url "https://github.com/getplumber/plumber/releases/download/v#{version}/plumber-darwin-arm64"
-      sha256 "f1ec8a005855ea6966b5595ab89fb5212b8a133bef15f3ded53663d7e77c037a"
+      sha256 "6cd464a6e3d0d608f9889b8f0a50d0a3ccbcde0982b04ae54a0073bc546af294"
 
       def install
         bin.install "plumber-darwin-arm64" => "plumber"
@@ -19,7 +19,7 @@ class Plumber < Formula
 
     on_intel do
       url "https://github.com/getplumber/plumber/releases/download/v#{version}/plumber-darwin-amd64"
-      sha256 "0af7f0e79b878ff29f406761c1a83aedcb28cef71ff1765964102b7aa03a5d25"
+      sha256 "08cd6d44a61149ccce9c71ef86cf614ef07e39c8b2d5ccec6deac96d7645c54a"
 
       def install
         bin.install "plumber-darwin-amd64" => "plumber"
@@ -30,7 +30,7 @@ class Plumber < Formula
   on_linux do
     on_arm do
       url "https://github.com/getplumber/plumber/releases/download/v#{version}/plumber-linux-arm64"
-      sha256 "c3cee57c1b2742f18ca1751ee827b1d57d2d555d660831529795bb97830bf2db"
+      sha256 "3995f70afd0f576dd30cc1e38a0f8099e1c2554fbcd9e248ad40ecf6d2ef54ea"
 
       def install
         bin.install "plumber-linux-arm64" => "plumber"
@@ -39,7 +39,7 @@ class Plumber < Formula
 
     on_intel do
       url "https://github.com/getplumber/plumber/releases/download/v#{version}/plumber-linux-amd64"
-      sha256 "73d9804e4157de75f6bc819ac975f2dceb87bfd96beec74d21f1f49eda80779a"
+      sha256 "329dfc0c91404d6d87ae95c60ef5a2aeade309df7020cd70c1e5e67c6737e9c3"
 
       def install
         bin.install "plumber-linux-amd64" => "plumber"
