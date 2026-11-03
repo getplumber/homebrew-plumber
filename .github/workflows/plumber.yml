@@ -1,0 +1,23 @@
+name: Plumber Score
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 4 * * 1"
+  workflow_dispatch:
+permissions: read-all
+jobs:
+  plumber:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          persist-credentials: false
+      - uses: getplumber/plumber@ebc213aa45dccd233ce5c2630f0aafa8e8d650c5 # pinned plumber version: v0.7.18
+        with:
+          score-push: true
+          min-points: 90
